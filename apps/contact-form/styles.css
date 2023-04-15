@@ -1,0 +1,53 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+button[type="submit"] {
+  font-weight: 700;
+  letter-spacing: 0.25ch;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  padding: 0.75rem;
+  border: inherit;
+  background: blue;
+  color: white;
+  border-radius: 4px;
+  background: #22d738;
+  background: linear-gradient(0deg, #22d738, #a8f148);
+  z-index: 1;
+}
+
+button[type="submit"]::before {
+  position: absolute;
+  content: "";
+  opacity: 0;
+  background: #22d738;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 200ms linear;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover::before {
+  opacity: 1;
+}
