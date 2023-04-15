@@ -1,0 +1,10 @@
+{
+  "name": "vanilla",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
