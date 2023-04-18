@@ -11,7 +11,7 @@ const isSquareOdd = (_, index, array) =>
 const isThisProductEven = function (element) {
   console.log([9] * 2);
   // this -> [9] for example
-  // [9] * 2 -> 18
+  // [9] * 2 -> 18 Type Conversion is turning [9] into Number: 9
   return (element * this) % 2 === 0;
 };
 const isThisProductEvenArrowFn = (element) => (element * this) % 2 === 0;
