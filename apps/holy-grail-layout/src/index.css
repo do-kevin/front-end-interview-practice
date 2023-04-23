@@ -1,0 +1,12 @@
+a {
+  display: flex;
+  padding: 0.5rem 0.25rem;
+  white-space: break-spaces;
+  background: transparent;
+  border-radius: 4px;
+}
+
+a:hover,
+a:active {
+  background: #f7b79c;
+}
