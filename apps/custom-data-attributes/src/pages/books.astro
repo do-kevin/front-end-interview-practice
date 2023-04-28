@@ -1,0 +1,39 @@
+---
+/**
+ * Task: create a list of three books of different genres with unique ids using custom data attributes that include the author's name. Also, style the list according to the genre, every data item should have a different background color.
+ */
+---
+
+<ul id="books">
+  <li
+    data-identifier="0"
+    data-genre="science-fiction"
+    data-author="Isaac Asimov"
+  >
+    Foundation
+  </li>
+  <li data-identifier="1" data-genre="fantasy" data-author="Brandon Sanderson">
+    Mistborn
+  </li>
+  <li data-identifier="2" data-genre="psychology" data-author="David C Funder">
+    The Personality Puzzle
+  </li>
+</ul>
+<style>
+  body {
+    font-size: 20;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  li[data-genre="science-fiction"] {
+    background: rgb(250, 139, 139);
+  }
+
+  li[data-genre="fantasy"] {
+    background: green;
+  }
+
+  li[data-genre="psychology"] {
+    background: yellow;
+  }
+</style>

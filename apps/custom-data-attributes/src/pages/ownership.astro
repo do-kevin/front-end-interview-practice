@@ -1,0 +1,26 @@
+---
+/**
+ * Task: Green Monastery Cuiside is experiencing a change of owners. Please change the restaurant owner's name from Richard to Mason using JavaScript.
+ */
+---
+
+<ul id="restaurantId">
+  <li
+    data-type="veg"
+    data-distance="10miles"
+    data-identifier="12345"
+    data-owner-name="Richard"
+  >
+    Green Monastery Cuisine
+  </li>
+</ul>
+
+<script>
+  import "../javascripts/ownership";
+</script>
+
+<style>
+  li[data-owner-name="Mason"] {
+    color: green;
+  }
+</style>

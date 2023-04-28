@@ -1,0 +1,27 @@
+---
+/**
+ * Task: change the sowing time for carrots from March_to_June to October_to_December. You can use getAttribute() and setAttribute().
+ */
+---
+
+<ul id="vegetable-seeds">
+  <li id="carrots" data-spacing="10cm" data-sowing-time="March_to_June">
+    Carrots
+  </li>
+  <li id="celery" data-spacing="30cm" data-sowing-time="February_to_March">
+    Celery
+  </li>
+  <li id="radishes" data-spacing="3cm" data-sowing-time="March_to_September">
+    Radishes
+  </li>
+</ul>
+
+<script>
+  import "../javascripts/sowing-time";
+</script>
+
+<style>
+  li[data-sowing-time="October_to_December"] {
+    color: green;
+  }
+</style>
