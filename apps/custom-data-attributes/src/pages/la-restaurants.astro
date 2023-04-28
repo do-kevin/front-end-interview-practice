@@ -1,0 +1,117 @@
+---
+/**
+ * Project: Restaurants in Los Angeles
+ *
+ * Description: You work for a Los Angeles tourist department and you're tasked with designing a webpage that helps provide tourists information on what kinds of food top restaurants offer in Los Angeles.
+ *
+ * There are three main categories of restaurants:
+ * - Tex-Mex
+ * - Korean
+ * - American
+ *
+ * 1. define custome data attributes for the three categories above
+ * 2. add a data-attribute for distance in miles of the restaurants
+ * 4. give the restaurants an unqiue id/identifier number as a data attribute
+ */
+---
+
+<article>
+  <h2>Restaurants in Los Angeles</h2>
+  <div class="hint"><span class="tex-mex"></span><span>Tex-Mex</span></div>
+  <div class="hint"><span class="korean"></span><span>Korean</span></div>
+  <div class="hint"><span class="american"></span><span>American</span></div>
+  <ul>
+    <li data-identifier="000000" data-type="tex-mex" data-distance="4miles">
+      Madre Restaurant
+    </li>
+    <li data-identifier="000001" data-type="korean" data-distance="7miles">
+      Sun Nong Dan
+    </li>
+    <li data-identifier="000002" data-type="tex-mex" data-distance="9miles">
+      Brothers Cousins Tacos
+    </li>
+    <li data-identifier="000003" data-type="american" data-distance="12miles">
+      Yard House
+    </li>
+    <li data-identifier="000004" data-type="american" data-distance="11miles">
+      Mel's Drive-In Hollywood
+    </li>
+    <li data-identifier="000005" data-type="tex-mex" data-distance="20miles">
+      Te'Kila
+    </li>
+    <li data-identifier="000006" data-type="korean" data-distance="25miles">
+      Jeong Yuk Jeom Korean BBQ LA
+    </li>
+    <li data-identifier="000007" data-type="korean" data-distance="14miles">
+      Daedo Sikdang
+    </li>
+  </ul>
+</article>
+
+<style>
+  :root {
+    --tex-mex-color: orange;
+    --american-color: red;
+    --korean-color: blue;
+  }
+
+  html {
+    font-family: "Lato";
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1.25em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .hint {
+    margin-right: 30px;
+    display: inline-block;
+  }
+
+  span.tex-mex,
+  span.korean,
+  span.american {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  /* COLOR INFO FOR TEX-MEX, KOREAN, AND AMERICAN */
+  span.tex-mex {
+    background: var(--tex-mex-color);
+  }
+
+  span.korean {
+    background: var(--korean-color);
+  }
+
+  span.american {
+    background: var(--american-color);
+  }
+  /* Add style for custom data attributes here */
+  li[data-type="tex-mex"] {
+    background: var(--tex-mex-color);
+  }
+
+  li[data-type="korean"] {
+    background: var(--korean-color);
+  }
+
+  li[data-type="american"] {
+    background: var(--american-color);
+  }
+</style>
